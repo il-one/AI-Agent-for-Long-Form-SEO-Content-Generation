@@ -179,17 +179,18 @@ The pipeline was deployed across **production blog articles**. Below are the key
 
 ```text
 .
-├── README.md                          # Repository Documentation & Overview
+├── README.md                          # Main project homepage & executive summary
+├── docs/                              # Deep-dive documentation & strategy
+│   ├── PRD.md                         # Full Product Requirements Document
+│   ├── architecture.md                # Node-by-node pipeline architecture & state flow
+│   ├── prompt-strategy.md             # Deep dive into agent persona design & iteration
+│   └── samples/                       # Raw markdown/doc exports of generated articles
+│       ├── raw-sample-1.md
+│       └── raw-sample-2.md
 ├── opal_workflow/
 │   ├── workflow_definition.json       # Exported Opal visual pipeline spec
-│   ├── prompts/                       # Node-level system prompts
-│   │   ├── 01_strategy_planner.txt
-│   │   ├── 02_section_writer.txt
-│   │   └── 03_reflection_critic.txt
-├── scripts/
-│   ├── export_to_gdocs.py             # Google Docs API sync helper
-│   └── evaluate_outputs.py            # SEO & Readability scoring script
-└── samples/
-    └── production_outputs/            # Sample rendered markdown & doc exports
-
+│   └── prompts/                       # Node-level system prompts
+│       ├── 01_strategy_planner.txt
+│       ├── 02_section_writer.txt
+│       └── 03_reflection_critic.txt
 ```
