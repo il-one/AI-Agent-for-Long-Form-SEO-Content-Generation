@@ -43,11 +43,11 @@ graph TD
 ## How to Deploy & Use
 
 1. **Import to Google Opal:**
-* Open [Google Opal Editor](https://www.google.com/search?q=https://opal.google).
+* Open [Google Opal Editor](https:/opal.google).
 * Click **Import Workflow** and select `opal_workflow/workflow_definition.json`.
 
 2. **Execute:**
-* Run the Mini-App interface, enter your target keyword parameters, and inspect the real-time node outputs.
+* Run the Mini-App interface, enter your target keyword parameters, target audience, tone, and inspect the real-time node outputs.
 
 ---
 
