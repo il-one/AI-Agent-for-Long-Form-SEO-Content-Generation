@@ -23,62 +23,46 @@ The pipeline is designed to solve the three primary failure modes of generative 
 
 ```mermaid
 graph TD
-    A[User Input: Keyword, Audience, Tone, Images Flag] --> B[Node 1: Strategy & Outline Generator]
-    B --> C[Node 3: Outline Reflection Critic]
-    C --> D{Outline Audit Score >= 8.5 / 10?}
-    D -- Score < 8.5 --> E[Outline Refiner Agent]
-    E --> C
-    D -- Score >= 8.5 --> F[State Initiator: Set Word Budget & Section List]
-    F --> G[Loop Control: Section Iterator]
-    G --> H[Node 2: Iterative Section Writer]
-    H --> I{Enable Visuals Flag True?}
-    I -- True --> J[Node 4: Multimodal Visual Generator]
-    I -- False --> K[Bypass Visual Generation]
-    J --> L[Node 3: Section Reflection Audit]
-    K --> L
-    L --> M{Section Audit Score >= 8.5 / 10?}
-    M -- Score < 8.5 --> N[Apply Feedback & Retry Draft]
-    N --> H
-    M -- Score >= 8.5 --> O[Append Section & Update Context Log]
-    O --> P{More Sections Remaining?}
-    P -- Yes --> G
-    P -- No --> Q[Node 5: Google Docs Exporter & Markdown Stitcher]
-    Q --> R[Final Published Article > 2,000 Words]
-
+    A[User Input: Keyword, Audience, Tone, Include Images?] --> B[Generate Initial SEO Outline]
+    B --> C{Reflection Evaluator: Best Practices Audit}
+    C -- Fails Criteria --> D[Refine & Polish Outline]
+    D --> C
+    C -- Passes Criteria --> E[Loop Through Sections]
+    E --> F[Generate Section Content]
+    E --> G{Include Images?}
+    G -- Yes --> H[Generate Contextual Image via Imagen]
+    G -- No --> I[Skip Visuals]
+    F --> J[Stitch & Assemble Master Document]
+    H --> J
+    I --> J
+    J --> K[Final Output: Long-Form SEO Article]
 ```
 
 ---
 
 ## 3. Detailed Node-by-Node Specifications
 
-### Node 1: Strategy & Outline Generator
+### Node 1: Strategy & Outline Generator with Output Assessment
 
-* **Default Model**: `gemini-3.1-pro` (Reasoning Tier)
+* **Default Model**: `gemini-3.1-pro` (or Agent-Selected `gemini-3.1-pro`)
 * **Execution Type**: Single Pass / Autonomous Search
-* **Role**: Deconstructs search intent, analyzes competitive gaps, and generates a structured H1/H2/H3 article outline.
+* **Role**: Deconstructs search intent, analyzes competitive gaps, and generates a structured H1/H2/H3 article outline. Evaluates outline against best practices. with pass threshold of 8.5 / 10/0. Scores below 8.5 initiate agent to refine outline.
 * **Target Output**: Minimum of 5–8 distinct H2 headings, each with 2–3 supporting H3 subheadings and assigned sub-keyword intent.
 
-### Node 2: Iterative Content Writer
+### Nodes 2-6: Iterative Content Writer
 
 * **Default Model**: `gemini-3-flash` (or Agent-Selected `gemini-3.1-pro`)
 * **Execution Type**: Stateful Sequential Loop
-* **Role**: Drafts 350 to 500 words per H2 section in isolation while reading from the global context history log (`written_history.log`).
+* **Role**: Drafts 175 words per section while reading from the global context history log (`written_history.log`).
 * **Isolation Constraint**: Enforces a strict non-repetition directive prohibiting introductory re-hashes or conclusions of previous sections.
 
-### Node 3: Self-Correction Reflection Audit (Critic Node)
+### Node 7: Multimodal Visual Generator
 
-* **Default Model**: `gemini-3.1-pro` (Reasoning Tier)
-* **Execution Type**: Deterministic Evaluator (`temperature: 0.1`)
-* **Role**: Evaluates both outlines and section drafts against a strict **10-point quality matrix**.
-* **Pass Threshold**: **Score $\ge$ 8.5 / 10.0**. Scores below 8.5 trigger automatic routing back to Node 2 (or the Outline Refiner) with structured revision feedback.
-
-### Node 4: Multimodal Visual Generator
-
-* **Default Model**: `imagen-3.0-generate-002` / `Imagen 4`
+* **Default Model**: Agent-Selected (Nano Banana or Nano Banana Pro)
 * **Execution Type**: Conditional Trigger (`enable_images == True`)
 * **Role**: Translates section text and H2 headings into photographic or conceptual image prompts, generating high-resolution 16:9 visual assets.
 
-### Node 5: Google Docs Exporter
+### Node 8: Google Docs Exporter
 
 * **Default Model**: Workspace API Integration Node
 * **Execution Type**: Programmatic Document Stitcher
@@ -142,7 +126,7 @@ The Reflection Critic (Node 3) evaluates outlines and drafts using a calibrated 
 | Score Range | Category Rating | Action Triggered |
 | --- | --- | --- |
 | **8.5 – 10.0** | **Publication Ready** | Approved. Advances state to the next section or final document assembly. |
-| **7.0 – 8.4** | **Minor Deficiencies** | Conditional Reject. Routes actionable feedback string to Node 2 for targeted revision pass. |
+| **7.0 – 8.4** | **Minor Deficiencies** | Conditional Reject. Routes actionable feedback string to Node 1 for targeted revision pass. |
 | **0.0 – 6.9** | **Structural Failure** | Hard Reject. Clears section draft and triggers a complete rewrite under revised prompt constraints. |
 
 ### Evaluation Criteria (Weighted)
