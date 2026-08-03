@@ -1,0 +1,8 @@
+1. Objective: Generate a 10-section SEO-optimized blog outline for the keyword {{"type": "in", "path": "ask_user_target_keyword", "title": "Target Keyword"}} tailored for {{"type": "in", "path": "ask_user_target_audience", "title": "Target Audience"}} using a {{"type": "in", "path": "ask_user_writing_tone", "title": "Writing Tone"}} tone. Evaluate the generated outline against SEO best practices and assign a score from 1 to 10. If the evaluation score is less than 8, perform internal iterations to improve the outline until it reaches a score of at least 8. Use generate_text for the creation and evaluation process.
+
+2. Output Format: Provide the final 10-section blog outline, the final SEO score, and a summary of the SEO optimizations applied. The output must be plain text without any markdown formatting such as bolding, italics, or headers.
+
+3. User Input / Context:
+Target Keyword: {{"type": "in", "path": "ask_user_target_keyword", "title": "Target Keyword"}}
+Target Audience: {{"type": "in", "path": "ask_user_target_audience", "title": "Target Audience"}}
+Writing Tone: {{"type": "in", "path": "ask_user_writing_tone", "title": "Writing Tone"}}
