@@ -1,0 +1,634 @@
+{
+  "metadata": {
+    "visual": {
+      "presentation": {
+        "themes": {
+          "3e0fb6a2-4727-429c-8ce6-2d755b5042f3": {
+            "template": "basic",
+            "templateAdditionalOptions": {},
+            "palette": {
+              "primary": {
+                "0": "#000000",
+                "5": "#001415",
+                "10": "#002021",
+                "15": "#002b2d",
+                "20": "#003739",
+                "25": "#004345",
+                "30": "#004f52",
+                "35": "#005c60",
+                "40": "#00696d",
+                "50": "#008489",
+                "60": "#00a1a7",
+                "70": "#1dbdc4",
+                "80": "#4cd9e0",
+                "90": "#6ff6fd",
+                "95": "#bdfcff",
+                "98": "#e6feff",
+                "99": "#f2ffff",
+                "100": "#ffffff"
+              },
+              "secondary": {
+                "0": "#000000",
+                "5": "#001415",
+                "10": "#041f21",
+                "15": "#102a2b",
+                "20": "#1b3436",
+                "25": "#274041",
+                "30": "#324b4c",
+                "35": "#3e5758",
+                "40": "#4a6364",
+                "50": "#627c7d",
+                "60": "#7b9697",
+                "70": "#96b0b1",
+                "80": "#b1cccd",
+                "90": "#cce8e9",
+                "95": "#daf6f7",
+                "98": "#e6feff",
+                "99": "#f2ffff",
+                "100": "#ffffff"
+              },
+              "tertiary": "",
+              "error": {
+                "0": "#000000",
+                "5": "#2d0001",
+                "10": "#410002",
+                "15": "#540003",
+                "20": "#690005",
+                "25": "#7e0007",
+                "30": "#93000a",
+                "35": "#a80710",
+                "40": "#ba1a1a",
+                "50": "#de3730",
+                "60": "#ff5449",
+                "70": "#ff897d",
+                "80": "#ffb4ab",
+                "90": "#ffdad6",
+                "95": "#ffedea",
+                "98": "#fff8f7",
+                "99": "#fffbff",
+                "100": "#ffffff"
+              },
+              "neutral": {
+                "0": "#000000",
+                "5": "#0e1212",
+                "10": "#191c1c",
+                "15": "#232627",
+                "20": "#2d3131",
+                "25": "#383c3c",
+                "30": "#444747",
+                "35": "#505353",
+                "40": "#5c5f5f",
+                "50": "#747878",
+                "60": "#8e9191",
+                "70": "#a9acab",
+                "80": "#c4c7c7",
+                "90": "#e0e3e3",
+                "95": "#eff1f1",
+                "98": "#f7faf9",
+                "99": "#fafdfc",
+                "100": "#ffffff"
+              },
+              "neutralVariant": {
+                "0": "#000000",
+                "5": "#091213",
+                "10": "#141d1e",
+                "15": "#1e2728",
+                "20": "#293233",
+                "25": "#343d3e",
+                "30": "#3f4949",
+                "35": "#4a5455",
+                "40": "#566061",
+                "50": "#6f7979",
+                "60": "#899393",
+                "70": "#a3adad",
+                "80": "#bec8c9",
+                "90": "#dae4e5",
+                "95": "#e9f3f3",
+                "98": "#f1fbfb",
+                "99": "#f4fefe",
+                "100": "#ffffff"
+              }
+            },
+            "themeColors": {
+              "primaryColor": "",
+              "secondaryColor": "",
+              "backgroundColor": "",
+              "primaryTextColor": "",
+              "textColor": ""
+            },
+            "splashScreen": {
+              "storedData": {
+                "handle": "drive:/1XJYNcajd20jcTQYaBjMQX0kGJIcJvXbd",
+                "mimeType": "image/png",
+                "contentLength": 1886640
+              }
+            }
+          }
+        },
+        "theme": "3e0fb6a2-4727-429c-8ce6-2d755b5042f3"
+      }
+    },
+    "intent": "Create an SEO long-form, 10-section blog article generator from a keyword, target audience, and tone with images optional if the users requests them for every 4 sections. Use an agent to check whether the outline meets SEO best practices and provide a score out of 10. If it doesn't meet standards, re-generate the outline. Otherwise, continue with the process. Use multiple nodes to write all sections: 1 node to write 2 sections until all sections are covered. Write sections of at least 175 words each. Use paragraphs of no more than 3 sentences. Use bullets if applicable to make it easier to read. Use formatting, including headings, bold, bullets, etc. Be sure to use accessible language and weave in authoritative advice. Avoid transitions beginning with \"okay\", \"alright\", \"remember\", or similar words. Avoid using \"it's about\", \"indeed\", and the sentence structure, \"this isn't just...it's...\" or \"aren't just...they're...\".\n",
+    "revision_intents": [],
+    "raw_intent": "Create an SEO long-form, 10-section blog article generator from a keyword, target audience, and tone with images optional if the users requests them for every 4 sections. Use an agent to check whether the outline meets SEO best practices and provide a score out of 10. If it doesn't meet standards, re-generate the outline. Otherwise, continue with the process. Use multiple nodes to write all sections: 1 node to write 2 sections until all sections are covered. Write sections of at least 175 words each. Use paragraphs of no more than 3 sentences. Use bullets if applicable to make it easier to read. Use formatting, including headings, bold, bullets, etc. Be sure to use accessible language and weave in authoritative advice. Avoid transitions beginning with \"okay\", \"alright\", \"remember\", or similar words. Avoid using \"it's about\", \"indeed\", and the sentence structure, \"this isn't just...it's...\" or \"aren't just...they're...\".\n",
+    "tags": [
+      "Content Marketing",
+      "AI Writer",
+      "Blogging",
+      "SEO"
+    ],
+    "parameters": {}
+  },
+  "assets": {},
+  "title": "SEOFlow (HTML Page)",
+  "description": "Generate comprehensive, SEO-optimized, ten-section blog posts for your target audience.",
+  "version": "0.0.1",
+  "nodes": [
+    {
+      "id": "node_step_outline_and_seo",
+      "metadata": {
+        "title": "Generate And Validate Outline",
+        "visual": {
+          "x": 700,
+          "y": 350,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Generate a 10-section SEO-optimized blog outline based on the user's keyword, audience, and tone. Evaluate the outline against SEO best practices and provide a score out of 10. If the score is less than 8, iterate on the outline until it meets the standard."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "1. Objective: Generate a 10-section SEO-optimized blog outline for the keyword {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}} tailored for {{\"type\":\"in\",\"path\":\"ask_user_target_audience\",\"title\":\"Target Audience\"}} using a {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}} tone. Evaluate the generated outline against SEO best practices and assign a score from 1 to 10. If the evaluation score is less than 8, perform internal iterations to improve the outline until it reaches a score of at least 8. Use generate_text for the creation and evaluation process.\n\n2. Output Format: Provide the final 10-section blog outline, the final SEO score, and a summary of the SEO optimizations applied. The output must be plain text without any markdown formatting such as bolding, italics, or headers.\n\n3. User Input / Context:\nTarget Keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\nTarget Audience: {{\"type\":\"in\",\"path\":\"ask_user_target_audience\",\"title\":\"Target Audience\"}}\nWriting Tone: {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_batch_1_2",
+      "metadata": {
+        "title": "Write Sections One And Two",
+        "visual": {
+          "x": 1050,
+          "y": 350,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Write the first two sections of the blog article. Ensure each section is at least 175 words, uses paragraphs of max 3 sentences, incorporates bullets, and maintains the requested tone. Avoid forbidden words and sentence structures. Use the provided outline and inputs."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "1. Objective: Write the first two sections of a blog article using the provided outline and SEO instructions. Ensure each section is at least 175 words long. Every paragraph must be a maximum of 3 sentences. You must include at least one bulleted list in each section. Maintain the specified writing tone throughout. Avoid generic filler words or repetitive sentence structures. Ensure the target keyword is integrated naturally.\n\n2. Output Format: Provide the text for the two sections in plain text. Do not use markdown headers or bolding. Verify that each section meets the word count and paragraph length requirements before completion.\n\n3. User Input / Context:\nTarget Keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\nOutline and SEO: {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}\nWriting Tone: {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_batch_3_4",
+      "metadata": {
+        "title": "Write Sections Three And Four",
+        "visual": {
+          "x": 1050,
+          "y": 700,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Write sections three and four of the blog article following all stylistic and formatting constraints provided in the application description."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "Objective: Write sections three and four of the blog article. You must incorporate the keyword {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}} and strictly follow the structural and SEO constraints defined in {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}. The content must be written in the specific {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}} provided.\n\nOutput Format: Provide the written content for sections three and four only. Ensure the formatting matches the stylistic requirements mentioned in the context. Use the system_objective_fulfilled tool once the sections are completed.\n\nUser Input / Context:\nTarget Keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\nOutline and SEO Constraints: {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}\nWriting Tone: {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_batch_5_6",
+      "metadata": {
+        "title": "Write Sections Five And Six",
+        "visual": {
+          "x": 1050,
+          "y": 1050,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Write sections five and six of the blog article following all stylistic and formatting constraints provided in the application description."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "Objective: Write sections five and six of the blog article based on the provided outline, target keyword, and writing tone. Ensure that all stylistic and formatting constraints specified in the outline and SEO instructions are strictly followed.\n\nOutput Format: Provide the text for sections five and six. Verify that the content aligns with the specified tone and SEO requirements. You are done when you have generated the complete text for both sections.\n\nUser Input / Context:\nTarget Keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\nOutline and SEO Requirements: {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}\nWriting Tone: {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_batch_7_8",
+      "metadata": {
+        "title": "Write Sections Seven And Eight",
+        "visual": {
+          "x": 1050,
+          "y": 1400,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Write sections seven and eight of the blog article following all stylistic and formatting constraints provided in the application description."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "Objective: Write sections seven and eight of the blog article. Ensure the content adheres to the provided SEO outline, incorporates the target keyword naturally, and maintains the specified writing tone while following all stylistic and formatting constraints.\n\nOutput Format: Provide the text for sections seven and eight in plain text. Verify that the target keyword is included and that the writing style matches the user's requirements.\n\nUser Input / Context:\nTarget Keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\nOutline and SEO Instructions: {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}\nWriting Tone: {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_batch_9_10",
+      "metadata": {
+        "title": "Write Sections Nine And Ten",
+        "visual": {
+          "x": 1050,
+          "y": 1750,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Write sections nine and ten of the blog article following all stylistic and formatting constraints provided in the application description."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "Objective: Write sections nine and ten of the blog article based on the provided SEO outline, target keyword, and writing tone. Adhere to all stylistic and formatting constraints specified for this project.\n\nOutput Format: Provide the written content for sections nine and ten in plain text.\n\nUser Input / Context:\nTarget Keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\nOutline and SEO: {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}\nWriting Tone: {{\"type\":\"in\",\"path\":\"ask_user_writing_tone\",\"title\":\"Writing Tone\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_generated_images",
+      "metadata": {
+        "title": "Generate Supplementary Images",
+        "visual": {
+          "x": 700,
+          "y": 700,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Generate two relevant images based on the target keyword if the user requested images. These images are intended for placement within the blog."
+      },
+      "type": "embed://a2/generate.bgl.json#module:main",
+      "configuration": {
+        "config$prompt": {
+          "parts": [
+            {
+              "text": "Act as a professional digital illustrator. Your task is to generate two distinct, high-quality images to accompany a long-form blog article about <input_name>target_keyword</input_name>. This task is initiated because the user's preference is set to <input_name>include_images</input_name>. \n\nBefore generating, implicitly plan the composition and visual elements to best represent the concept of <input_name>target_keyword</input_name> for an authoritative and engaging blog audience. Do not include this internal thinking in your output.\n\nOverall Style:\nMaintain a consistent, modern digital illustration style across both images. The aesthetic should be clean, professional, and sophisticated, utilizing a vibrant yet balanced color palette. The lighting should be clear and intentional, creating an inviting and trustworthy atmosphere suitable for an SEO-optimized blog post.\n\nImage 1:\nA detailed digital illustration that captures the core essence of <input_name>target_keyword</input_name>. The scene should feature a prominent central subject or a clear metaphorical representation of the topic. The background should be contextually relevant and rendered with high detail but kept clean to ensure the subject remains the focal point. Use a balanced, wide-angle composition to establish the theme effectively.\n\nImage 2:\nA complementary digital illustration that focuses on a secondary aspect or a specific practical application of <input_name>target_keyword</input_name>. This image must maintain perfect visual consistency with Image 1, using identical artistic techniques, line weights, and color grading. Use a medium-shot or a more dynamic camera angle to provide visual variety while ensuring the thematic and stylistic identity is identical to the first image.\n\nConsistency Requirements:\nEnsure the art style, any recurring characters, and environmental details remain perfectly consistent across both images. Both images should feel like they were created as a unified set for the same article.\n\nIMPORTANT: Generate separate images, not a combined image, grid, or collage. Each image must be its own separate output.\n\nIMPORTANT: Generate separate images.\n\ntarget_keyword: {{\"type\":\"in\",\"path\":\"ask_user_target_keyword\",\"title\":\"Target Keyword\"}}\n\ninclude_images: {{\"type\":\"in\",\"path\":\"ask_user_include_images\",\"title\":\"Include Images\"}}"
+            }
+          ],
+          "role": "user"
+        },
+        "generation-mode": "agent"
+      }
+    },
+    {
+      "id": "node_step_blog_content",
+      "metadata": {
+        "title": "Build Webpage",
+        "visual": {
+          "x": 1400,
+          "y": 350,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        },
+        "step_intent": "Combine the outline, all written sections, and the generated images (if any) into a single, cohesive, and well-formatted HTML blog post using the generate_webpage API.",
+        "userModified": true,
+        "expected_output": [
+          {
+            "description": "HTML and CSS for blog webpage",
+            "list": false,
+            "type": "text"
+          }
+        ]
+      },
+      "type": "embed://a2/a2.bgl.json#module:render-outputs",
+      "configuration": {
+        "text": {
+          "role": "user",
+          "parts": [
+            {
+              "text": "Create a premium, editorial-style blog post webpage designed for high readability and professional authority. The layout should follow a modern \"Digital Magazine\" aesthetic, prioritizing a clean, single-column reading experience that minimizes distractions and maximizes content engagement.\n\n### 1. Layout Organization\n- **Header & Hero Section**: Feature a prominent H1 title at the top with a subtle meta-data row (reading time, category, and date). If images are provided, {{\"type\":\"in\",\"path\":\"node_step_generated_images\",\"title\":\"Generate Supplementary Images\"}} use the first image as a wide, high-impact hero visual below the title to set the tone.\n- **Interactive Table of Contents**: Include a \"Quick Navigation\" sticky sidebar or an elegant top-level card that lists all 10 sections from the outline, allowing users to jump to specific parts of the long-form content.\n- **Main Content Flow**: Do not generate new content. Use the content that's been generated ({{\"type\":\"in\",\"path\":\"node_step_batch_1_2\",\"title\":\"Write Sections One And Two\"}}, {{\"type\":\"in\",\"path\":\"node_step_batch_3_4\",\"title\":\"Write Sections Three And Four\"}}, {{\"type\":\"in\",\"path\":\"node_step_batch_5_6\",\"title\":\"Write Sections Five And Six\"}}, {{\"type\":\"in\",\"path\":\"node_step_batch_7_8\",\"title\":\"Write Sections Seven And Eight\"}}, {{\"type\":\"in\",\"path\":\"node_step_batch_9_10\",\"title\":\"Write Sections Nine And Ten\"}}) Arrange the 10 sections in a vertical stack. Use semantic `<section>` tags for each.\n    - **Headings**: Use distinct H2 tags for main sections and H3 for sub-points to create a clear visual hierarchy.\n    - **Paragraph Styling**: Ensure the 3-sentence paragraph constraint is respected with generous line-height (1.6 to 1.8) and paragraph spacing to prevent \"walls of text.\"\n    - **Lists**: Style bullet points with custom icons or subtle markers that align with the brand’s accent color.\n- **Media Integration**: {{\"type\":\"in\",\"path\":\"node_step_generated_images\",\"title\":\"Generate Supplementary Images\"}} Place the second supplementary image approximately midway through the article (near section 5 or 6) as a break in the text. Use figure captions for a professional touch.\n- **Footer**: Conclude with a \"Key Takeaways\" summary box and a call-to-action area for social sharing or related reading.\n\n### 2. Style Design Language\n- **Visual Aesthetic**: \"Premium Editorial\" – think high-end publications like The Atlantic or Medium. The design should feel sophisticated, trustworthy, and airy.\n- **Color Palette**: Use a \"Refined Professional\" scheme. \n    - Background: Soft off-white (#FAFAFA) or very light grey to reduce eye strain.\n    - Typography: Deep Charcoal (#2D2D2D) for high contrast and readability.\n    - Accents: A single, bold accent color (e.g., Deep Navy, Forest Green, or Burnt Orange) for links, bullets, and borders.\n- **Typography**: \n    - Headings: Use a bold, high-contrast Serif font (e.g., Playfair Display or Lora) to convey authority.\n    - Body Text: Use a clean, highly legible Sans-Serif font (e.g., Inter, Montserrat, or Roboto) at a comfortable size (18px-20px).\n- **Spacing & Whitespace**: Implement a \"Breathable\" layout. Use wide margins (max-width of 800px for the text column) and significant vertical padding between sections to emphasize the \"SEO Long-form\" nature of the content without overwhelming the reader.\n\n### 3. Component Guidelines\n- **Callout Cards**: Use subtle background tints or left-border accents to highlight \"Authoritative Advice\" or \"Key Tips\" woven throughout the sections.\n- **Responsive Design**: Ensure the article scales perfectly for mobile devices. On smaller screens, the font size should adjust slightly, and the table of contents should transform into a collapsible menu.\n- **Interactive Elements**: Add a smooth scroll effect for the Table of Contents links and a subtle hover state for any interactive bullets or call-to-action buttons.\n- **Formatting Constraints**: Ensure all bold text and bulleted lists provided in the input sections are rendered with high visual emphasis to improve \"scannability.\"\n\noutline_and_seo: {{\"type\":\"in\",\"path\":\"node_step_outline_and_seo\",\"title\":\"Generate And Validate Outline\"}}\n\nbatch_1_2: {{\"type\":\"in\",\"path\":\"node_step_batch_1_2\",\"title\":\"Write Sections One And Two\"}}\n\nbatch_3_4: {{\"type\":\"in\",\"path\":\"node_step_batch_3_4\",\"title\":\"Write Sections Three And Four\"}}\n\nbatch_5_6: {{\"type\":\"in\",\"path\":\"node_step_batch_5_6\",\"title\":\"Write Sections Five And Six\"}}\n\nbatch_7_8: {{\"type\":\"in\",\"path\":\"node_step_batch_7_8\",\"title\":\"Write Sections Seven And Eight\"}}\n\nbatch_9_10: {{\"type\":\"in\",\"path\":\"node_step_batch_9_10\",\"title\":\"Write Sections Nine And Ten\"}}\n\ngenerated_images: {{\"type\":\"in\",\"path\":\"node_step_generated_images\",\"title\":\"Generate Supplementary Images\"}}\n\ninclude_images: {{\"type\":\"in\",\"path\":\"ask_user_include_images\",\"title\":\"Include Images\"}}"
+            }
+          ]
+        },
+        "b-system-instruction": {
+          "role": "user",
+          "parts": [
+            {
+              "text": "You are an AI Web Developer. Your task is to generate a single, self-contained HTML document for rendering in an iframe, based on user instructions and data.\n\n**Visual aesthetic:**\n    * Aesthetics are crucial. Make the page look amazing, especially on mobile.\n    * Respect any instructions on style, color palette, or reference examples provided by the user.\n    * **CRITICAL: Aim for premium, state-of-the-art designs. Avoid simple minimum viable products.**\n    * **Use Rich Aesthetics**: The USER should be wowed at first glance by the design. Use best practices in modern web design (e.g. vibrant colors, dark modes, glassmorphism, and dynamic animations) to create a stunning first impression. Failure to do this is UNACCEPTABLE.\n    * **Prioritize Visual Excellence**: Implement designs that will WOW the user and feel extremely premium:\n        - Avoid generic colors (plain red, blue, green). Use curated, harmonious color palettes (e.g., HSL tailored colors, sleek dark modes).\n        - Using modern typography (e.g., from Google Fonts like Inter, Roboto, or Outfit) instead of browser defaults.\n        - Use smooth gradients.\n        - Add subtle micro-animations for enhanced user experience.\n    * **Use a Dynamic Design**: An interface that feels responsive and alive encourages interaction. Achieve this with hover effects and interactive elements. Micro-animations, in particular, are highly effective for improving user engagement.\n    * **Thematic Specificity**: Do not just create a generic layout. Define a clear \"vibe\" or theme based on the content. Use specific aesthetic keywords (e.g., \"Glassmorphism\", \"Neobrutalism\", \"Minimalist\", \"Comic Book Style\") to guide the design.\n    * **Typography Hierarchy**: Explicitly import and use font pairings. Use a distinct Display Font for headers and a highly readable Body Font for text.\n    * **Readability**: Pay extra attention to readability. Ensure the text is always readable with sufficient contrast against the background. Choose fonts and colors that enhance legibility.\n\n**Design and Functionality:**\n    * **Component-Based Design**: Do not just dump text into blocks. Semanticize the content into distinct UI components.\n    * **Layout Dynamics**: Break the grid. Avoid strict, identical grid columns. Use asymmetrical layouts, Bento grids, or responsive flexbox layouts where some elements span full width to create visual interest and emphasize key content.\n    * **Tailwind Configuration**: Extend the Tailwind configuration within a `<script>` block to define custom font families and color palettes that match the theme.\n    * Thoroughly analyze the user's instructions to determine the desired type of webpage, application, or visualization. What are the key features, layouts, or functionality?\n    * Analyze any provided data to identify the most compelling layout or visualization of it. For example, if the user requests a visualization, select an appropriate chart type (bar, line, pie, scatter, etc.) to create the most insightful and visually compelling representation. Or if user instructions say `use a carousel format`, you should consider how to break the content and any media into different card components to display within the carousel.\n    * If requirements are underspecified, make reasonable assumptions to complete the design and functionality. Your goal is to deliver a working product with no placeholder content.\n    * Ensure the generated code is valid and functional. Return only the code, and open the HTML codeblock with the literal string \"```html\".\n    * The output must be a complete and valid HTML document with no placeholder content for the developer to fill in.\n\n**Libraries:**\n  Unless otherwise specified, use:\n    * Tailwind for CSS\n    * **CRITICAL: Use the Tailwind CDN from `https://cdn.tailwindcss.com`. Do NOT use `tailwind.min.css` or any other local Tailwind file. Always include Tailwind using: `<script src=\"https://cdn.tailwindcss.com\"></script>`**\n\n**Constraints:**\n  * **External Links:** You ARE allowed to generate external links (`<a href=\"...\">` and `window.open(...)`) to external websites (e.g. google.com, wikipedia.org) for user navigation.\n  * **NO External Embeds:** Do NOT embed any external resources (e.g. `<script src=\"...\">`, `<img src=\"...\">`, `<iframe src=\"...\">`, `<link href=\"...\">`) from external URLs. Content Security Policy (CSP) will block them.\n  * **Media Restriction:** ONLY use media URLs that are explicitly passed in the input. Do NOT generate or hallucinate any other media URLs (e.g. from placeholder sites or external CDNs).\n  * **Render All Media:** You MUST render ALL media (images, videos, audio) that are passed in. Do NOT skip or omit any provided media items. Every passed-in media URL must appear in the final HTML output.\n  * **Navigation Restriction:** Do NOT generate unneeded fake links or buttons to sub-pages (e.g. \"About\", \"Contact\", \"Learn More\") unless explicitly requested. Stick to the plan and the provided content.\n  * **Footer Restriction:** **NEVER** generate any footer content, including legal footers like \"All rights reserved\" or \"Copyright 2024\". [It is a violation of Google's policies to hallucinate legal footers.]\n"
+            }
+          ]
+        },
+        "p-render-mode": "Auto",
+        "b-render-model-name": "gemini-flash",
+        "b-doc-a-edit-mode": "new",
+        "b-doc-title": ""
+      }
+    },
+    {
+      "id": "ask_user_target_keyword",
+      "metadata": {
+        "title": "Target Keyword",
+        "visual": {
+          "x": 250,
+          "y": 300,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        }
+      },
+      "type": "embed://a2/a2.bgl.json#21ee02e7-83fa-49d0-964c-0cab10eafc2c",
+      "configuration": {
+        "description": {
+          "parts": [
+            {
+              "text": "Enter the primary keyword for the article."
+            }
+          ],
+          "role": "user"
+        },
+        "p-modality": "Any"
+      }
+    },
+    {
+      "id": "ask_user_target_audience",
+      "metadata": {
+        "title": "Target Audience",
+        "visual": {
+          "x": 250,
+          "y": 450,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        }
+      },
+      "type": "embed://a2/a2.bgl.json#21ee02e7-83fa-49d0-964c-0cab10eafc2c",
+      "configuration": {
+        "description": {
+          "parts": [
+            {
+              "text": "Specify the intended audience for this content."
+            }
+          ],
+          "role": "user"
+        },
+        "p-modality": "Any"
+      }
+    },
+    {
+      "id": "ask_user_writing_tone",
+      "metadata": {
+        "title": "Writing Tone",
+        "visual": {
+          "x": 250,
+          "y": 600,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        }
+      },
+      "type": "embed://a2/a2.bgl.json#21ee02e7-83fa-49d0-964c-0cab10eafc2c",
+      "configuration": {
+        "description": {
+          "parts": [
+            {
+              "text": "Define the preferred tone of the writing."
+            }
+          ],
+          "role": "user"
+        },
+        "p-modality": "Any"
+      }
+    },
+    {
+      "id": "ask_user_include_images",
+      "metadata": {
+        "title": "Include Images",
+        "visual": {
+          "x": 250,
+          "y": 750,
+          "collapsed": "expanded",
+          "outputHeight": 88
+        }
+      },
+      "type": "embed://a2/a2.bgl.json#21ee02e7-83fa-49d0-964c-0cab10eafc2c",
+      "configuration": {
+        "description": {
+          "parts": [
+            {
+              "text": "Type 'yes' to generate section-specific images."
+            }
+          ],
+          "role": "user"
+        },
+        "p-modality": "Any"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "ask_user_target_audience",
+      "to": "node_step_outline_and_seo",
+      "out": "context",
+      "in": "p-z-ask_user_target_audience"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_outline_and_seo",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_batch_1_2",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_batch_3_4",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_batch_5_6",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_batch_7_8",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_batch_9_10",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_target_keyword",
+      "to": "node_step_generated_images",
+      "out": "context",
+      "in": "p-z-ask_user_target_keyword"
+    },
+    {
+      "from": "ask_user_writing_tone",
+      "to": "node_step_outline_and_seo",
+      "out": "context",
+      "in": "p-z-ask_user_writing_tone"
+    },
+    {
+      "from": "ask_user_writing_tone",
+      "to": "node_step_batch_1_2",
+      "out": "context",
+      "in": "p-z-ask_user_writing_tone"
+    },
+    {
+      "from": "ask_user_writing_tone",
+      "to": "node_step_batch_3_4",
+      "out": "context",
+      "in": "p-z-ask_user_writing_tone"
+    },
+    {
+      "from": "ask_user_writing_tone",
+      "to": "node_step_batch_5_6",
+      "out": "context",
+      "in": "p-z-ask_user_writing_tone"
+    },
+    {
+      "from": "ask_user_writing_tone",
+      "to": "node_step_batch_7_8",
+      "out": "context",
+      "in": "p-z-ask_user_writing_tone"
+    },
+    {
+      "from": "ask_user_writing_tone",
+      "to": "node_step_batch_9_10",
+      "out": "context",
+      "in": "p-z-ask_user_writing_tone"
+    },
+    {
+      "from": "node_step_outline_and_seo",
+      "to": "node_step_batch_1_2",
+      "out": "context",
+      "in": "p-z-node_step_outline_and_seo"
+    },
+    {
+      "from": "node_step_outline_and_seo",
+      "to": "node_step_batch_3_4",
+      "out": "context",
+      "in": "p-z-node_step_outline_and_seo"
+    },
+    {
+      "from": "node_step_outline_and_seo",
+      "to": "node_step_batch_5_6",
+      "out": "context",
+      "in": "p-z-node_step_outline_and_seo"
+    },
+    {
+      "from": "node_step_outline_and_seo",
+      "to": "node_step_batch_7_8",
+      "out": "context",
+      "in": "p-z-node_step_outline_and_seo"
+    },
+    {
+      "from": "node_step_outline_and_seo",
+      "to": "node_step_batch_9_10",
+      "out": "context",
+      "in": "p-z-node_step_outline_and_seo"
+    },
+    {
+      "from": "node_step_outline_and_seo",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_outline_and_seo"
+    },
+    {
+      "from": "ask_user_include_images",
+      "to": "node_step_generated_images",
+      "out": "context",
+      "in": "p-z-ask_user_include_images"
+    },
+    {
+      "from": "ask_user_include_images",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-ask_user_include_images"
+    },
+    {
+      "from": "node_step_batch_1_2",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_batch_1_2"
+    },
+    {
+      "from": "node_step_batch_3_4",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_batch_3_4"
+    },
+    {
+      "from": "node_step_batch_5_6",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_batch_5_6"
+    },
+    {
+      "from": "node_step_batch_7_8",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_batch_7_8"
+    },
+    {
+      "from": "node_step_batch_9_10",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_batch_9_10"
+    },
+    {
+      "from": "node_step_generated_images",
+      "to": "node_step_blog_content",
+      "out": "context",
+      "in": "p-z-node_step_generated_images"
+    }
+  ],
+  "url": "drive:/1AO58Y1DbWOiRpczukdY3uneawfkEcVg1"
+}
