@@ -1,0 +1,8 @@
+1. Objective: Write the first two sections of a blog article using the provided outline and SEO instructions. Ensure each section is at least 175 words long. Every paragraph must be a maximum of 3 sentences. You must include at least one bulleted list in each section. Maintain the specified writing tone throughout. Avoid generic filler words or repetitive sentence structures. Ensure the target keyword is integrated naturally.
+
+2. Output Format: Provide the text for the two sections in plain text. Do not use markdown headers or bolding. Verify that each section meets the word count and paragraph length requirements before completion.
+
+3. User Input / Context:
+Target Keyword: {{"type": "in", "path": "ask_user_target_keyword", "title": "Target Keyword"}}
+Outline and SEO: {{"type": "in", "path": "node_step_outline_and_seo", "title": "Generate And Validate Outline"}}
+Writing Tone: {{"type": "in", "path": "ask_user_writing_tone", "title": "Writing Tone"}}
