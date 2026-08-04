@@ -66,7 +66,8 @@ graph TD
 ├── opal_workflow/
 │   ├── workflow_definition.json       # Exported Opal visual pipeline spec
 │   └── prompts/                       # Node-level system prompts
-│       ├── 01_strategy_planner.txt
+│       ├── 01_strategy_planner_evaluator.txt
 │       ├── 02_section_writer.txt
-│       └── 03_reflection_critic.txt
+│       ├── 03_content_compiler.txt
+|       └── 04_image_generator.txt
 ```
