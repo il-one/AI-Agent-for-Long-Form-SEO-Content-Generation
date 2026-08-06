@@ -1,0 +1,44 @@
+Create a premium, editorial-style blog post webpage (or document) designed for high readability and professional authority. The layout should follow a modern "Digital Magazine" aesthetic, prioritizing a clean, single-column reading experience that minimizes distractions and maximizes content engagement.
+
+### 1. Layout Organization
+- **Header & Hero Section**: Feature a prominent H1 title at the top with a subtle meta-data row (reading time, category, and date). If images are provided, {{"type": "in", "path": "node_step_generated_images", "title": "Generate Supplementary Images"}} use the first image as a wide, high-impact hero visual below the title to set the tone.
+- **Interactive Table of Contents**: Include a "Quick Navigation" sticky sidebar or an elegant top-level card that lists all 10 sections from the outline, allowing users to jump to specific parts of the long-form content.
+- **Main Content Flow**: Do not generate new content. Use the content that's been generated ({{"type": "in", "path": "node_step_batch_1_2", "title": "Write Sections One And Two"}}, {{"type": "in", "path": "node_step_batch_3_4", "title": "Write Sections Three And Four"}}, {{"type": "in", "path": "node_step_batch_5_6", "title": "Write Sections Five And Six"}}, {{"type": "in", "path": "node_step_batch_7_8", "title": "Write Sections Seven And Eight"}}, {{"type": "in", "path": "node_step_batch_9_10", "title": "Write Sections Nine And Ten"}}) Arrange the 10 sections in a vertical stack. Use semantic `<section>` tags for each.
+    - **Headings**: Use distinct H2 tags for main sections and H3 for sub-points to create a clear visual hierarchy.
+    - **Paragraph Styling**: Ensure the 3-sentence paragraph constraint is respected with generous line-height (1.6 to 1.8) and paragraph spacing to prevent "walls of text."
+    - **Lists**: Style bullet points with custom icons or subtle markers that align with the brand’s accent color.
+- **Media Integration**: {{"type": "in", "path": "node_step_generated_images", "title": "Generate Supplementary Images"}} Place the second supplementary image approximately midway through the article (near section 5 or 6) as a break in the text. Use figure captions for a professional touch.
+- **Footer**: Conclude with a "Key Takeaways" summary box and a call-to-action area for social sharing or related reading.
+
+### 2. Style Design Language
+- **Visual Aesthetic**: "Premium Editorial" – think high-end publications like The Atlantic or Medium. The design should feel sophisticated, trustworthy, and airy.
+- **Color Palette**: Use a "Refined Professional" scheme. 
+    - Background: Soft off-white (#FAFAFA) or very light grey to reduce eye strain.
+    - Typography: Deep Charcoal (#2D2D2D) for high contrast and readability.
+    - Accents: A single, bold accent color (e.g., Deep Navy, Forest Green, or Burnt Orange) for links, bullets, and borders.
+- **Typography**: 
+    - Headings: Use a bold, high-contrast Serif font (e.g., Playfair Display or Lora) to convey authority.
+    - Body Text: Use a clean, highly legible Sans-Serif font (e.g., Inter, Montserrat, or Roboto) at a comfortable size (18px-20px).
+- **Spacing & Whitespace**: Implement a "Breathable" layout. Use wide margins (max-width of 800px for the text column) and significant vertical padding between sections to emphasize the "SEO Long-form" nature of the content without overwhelming the reader.
+
+### 3. Component Guidelines
+- **Callout Cards**: Use subtle background tints or left-border accents to highlight "Authoritative Advice" or "Key Tips" woven throughout the sections.
+- **Responsive Design**: Ensure the article scales perfectly for mobile devices. On smaller screens, the font size should adjust slightly, and the table of contents should transform into a collapsible menu.
+- **Interactive Elements**: Add a smooth scroll effect for the Table of Contents links and a subtle hover state for any interactive bullets or call-to-action buttons.
+- **Formatting Constraints**: Ensure all bold text and bulleted lists provided in the input sections are rendered with high visual emphasis to improve "scannability."
+
+outline_and_seo: {{"type": "in", "path": "node_step_outline_and_seo", "title": "Generate And Validate Outline"}}
+
+batch_1_2: {{"type": "in", "path": "node_step_batch_1_2", "title": "Write Sections One And Two"}}
+
+batch_3_4: {{"type": "in", "path": "node_step_batch_3_4", "title": "Write Sections Three And Four"}}
+
+batch_5_6: {{"type": "in", "path": "node_step_batch_5_6", "title": "Write Sections Five And Six"}}
+
+batch_7_8: {{"type": "in", "path": "node_step_batch_7_8", "title": "Write Sections Seven And Eight"}}
+
+batch_9_10: {{"type": "in", "path": "node_step_batch_9_10", "title": "Write Sections Nine And Ten"}}
+
+generated_images: {{"type": "in", "path": "node_step_generated_images", "title": "Generate Supplementary Images"}}
+
+include_images: {{"type": "in", "path": "ask_user_include_images", "title": "Include Images"}}
