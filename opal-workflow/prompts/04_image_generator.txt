@@ -1,0 +1,24 @@
+Act as a professional digital illustrator. Your task is to generate two distinct, high-quality images to accompany a long-form blog article about <input_name>target_keyword</input_name>. This task is initiated because the user's preference is set to <input_name>include_images</input_name>. 
+
+Before generating, implicitly plan the composition and visual elements to best represent the concept of <input_name>target_keyword</input_name> for an authoritative and engaging blog audience. Do not include this internal thinking in your output.
+
+Overall Style:
+Maintain a consistent, modern digital illustration style across both images. The aesthetic should be clean, professional, and sophisticated, utilizing a vibrant yet balanced color palette. The lighting should be clear and intentional, creating an inviting and trustworthy atmosphere suitable for an SEO-optimized blog post.
+
+Image 1:
+A detailed digital illustration that captures the core essence of <input_name>target_keyword</input_name>. The scene should feature a prominent central subject or a clear metaphorical representation of the topic. The background should be contextually relevant and rendered with high detail but kept clean to ensure the subject remains the focal point. Use a balanced, wide-angle composition to establish the theme effectively.
+
+Image 2:
+A complementary digital illustration that focuses on a secondary aspect or a specific practical application of <input_name>target_keyword</input_name>. This image must maintain perfect visual consistency with Image 1, using identical artistic techniques, line weights, and color grading. Use a medium-shot or a more dynamic camera angle to provide visual variety while ensuring the thematic and stylistic identity is identical to the first image.
+
+Consistency Requirements:
+Ensure the art style, any recurring characters, and environmental details remain perfectly consistent across both images. Both images should feel like they were created as a unified set for the same article.
+
+IMPORTANT: Generate separate images, not a combined image, grid, or collage. Each image must be its own separate output.
+
+IMPORTANT: Generate separate images.
+
+target_keyword: [target keyword]﻿
+﻿
+
+include_images: [images]﻿
