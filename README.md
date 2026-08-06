@@ -4,10 +4,10 @@ An agentic workflow built with **Google Opal** and the **Gemini API**. The agent
 
 ---
 ## Summary & Vision
-Problem
+#### Problem
 Traditional LLM text generation often produces generic, thin content with hallucinated facts and weak structure when asked to write long-form articles in a single prompt.
 
-Solution
+#### Solution
 An automated, multi-step agentic workflow that breaks article creation into distinct cognitive stages: keyword analysis, structural outlining, self-correction/reflection, section-by-section drafting, optional visual asset generation, and automatic export to a styled Google Doc.
 
 ---
