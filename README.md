@@ -42,9 +42,9 @@ graph TD
 
 ## How to Deploy & Use
 
-1. **Import to Google Opal:**
-* Open [Google Opal Editor](https:/opal.google).
-* Click **Import Workflow** and select `opal_workflow/workflow_definition.json`.
+1. **Import to LLM:**
+* Open your LLM of choice: Gemini, Claude, or ChatGPT.
+* Click upload the JSON file `skill-workflow/workflow_definition.json`.
 
 2. **Execute:**
 * Run the Mini-App interface, enter your target keyword parameters, target audience, tone, and inspect the real-time node outputs.
